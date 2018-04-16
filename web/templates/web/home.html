@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>首页</title>
+    </head>
+    <body>
+        <div><a href="{% url 'add2' 2 3 as the_url %}">{{ the_url }}</a></div>
+        {{ request.path }}
+        <div>
+        {% for i in TutorialList %}
+        {{ i }}
+        {% endfor %} 
+        </div>
+    </body>
+</html>
